@@ -46,7 +46,7 @@ window.onload = function () {
             ctx.fillStyle = "#000";
             ctx.fillRect(0, 0, WIDTH, HEIGHT);
             ctx.strokeStyle = "#fff";
-            ctx.lineWidth = 50;
+            ctx.lineWidth = 10;
             ctx.lineJoin = "round";
             ctx.beginPath();
 
@@ -54,7 +54,7 @@ window.onload = function () {
 
             let c = 0;
             for (let i = 0; i < bufferLength; i++) {
-                displayedArray[i] += (dataArray[i] - displayedArray[i]) / 5;
+                displayedArray[i] += (dataArray[i] - displayedArray[i]) / 4;
                 for (let j = 0; j < 10; j++) {
 
                     barHeight = displayedArray[i];
